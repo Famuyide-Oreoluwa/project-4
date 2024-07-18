@@ -50,6 +50,7 @@ html{
     color: white;
     margin: 5px;
     transition: .4s ease;
+    cursor: pointer;
 }
 
 #header a i:hover{
@@ -284,6 +285,7 @@ html{
 #contact form input,textarea{
     background: #fff;
     border: 1px solid black;
+    color: black;
 }
 
 #contact form input{
@@ -311,6 +313,7 @@ input::placeholder{
 
 button{
     background: #fff;
+    color: black;
     margin-left: 7px;
     width: 130px;
     margin-top: 10px;
@@ -335,74 +338,165 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
+    /* RESPONSIVENESS */ 
 
 
 @media (max-width: 768px) {
+
     #header ul {
         display: none;
     }
 
-    #body {
-        margin: 20px;
-        padding: 20px;
+    #header .logo{
+        margin-left: -90px;
     }
 
-
-
-
-
-    @media (max-width: 768px) {
-        #header ul {
-            display: none;
-        }
-    
-        #body {
-            margin: 20px;
-            padding: 20px;
-            width: calc(100% - 40px); /* To prevent overflow */
-        }
-    
-        #body img {
-            width: 80%;
-            margin: 0 auto;
-        }
-    
-        #about {
-            margin: 20px;
-            width: calc(100% - 40px); /* To prevent overflow */
-        }
-    
-        .gallery img {
-            width: 100%;
-            margin: 0;
-        }
-    
-        .listing {
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
-        }
-    
-        .pt-1, .pt-2 {
-            margin-left: 0;
-        }
-    
-        #experience p {
-            margin-left: 20px;
-            width: calc(100% - 40px); /* To prevent overflow */
-        }
-    
-        #contact form {
-            width: calc(100% - 40px); /* To prevent overflow */
-        }
+    #header .socials{
+        margin-left: -20px;
     }
+
+    #body{
+        margin-left: -30px;
+    }
+
+   #body img{
+       margin-left: 0px;
+       height: 200px;
+       width: 200px;
+       margin-top: -60px;
+   }
+
+
+   #body h2{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing:1px;
+    margin-top: 10px;
+   }
+
+   #body h3{
+    margin-left: 45px;
+    font-size: 17px;
+   }
+
+   #body p{
+    font-size: 14px;
+    letter-spacing: 2px;
+    word-spacing: .5px;
+    line-height: 20px;
+    margin-top: 10px;
+   }
+
+   #body p br{
+    display: none;
+   }
+
+
+   #about h1{
+     font-size: 15px;
+     margin-left: -120px;
+   }
+
+   #about h1::before,
+   #about h1::after {
+    content: '';
+    flex: 0 0 20%;
+    border-top: 1px solid cyan;
+    margin: 0 10px;
+}
+
+    #about p{
+        margin-left: -110px;
+        padding-right: 80px;
+        text-align: justify;
+    }
+
+    .listing{
+        display: block;
+    }
+
+    #about .listing .pt-1{
+        margin-left: -60px;
+    }
+
+    #about .listing .pt-2{
+        margin-left: -60px;
+    }
+
+   
+    #experience h1{
+    font-size: 15px;
+    margin-left: -12 0px;
+  }
+
+    #experience h1::before{
+    content: '';
+    flex: 0 0 10%;
+    border-top: 1px solid cyan;
+    margin: 0 10px;
+
+}
+
+    #experience h1::after {
+    content: '';
+    flex: 0 0 10%;
+    border-top: 1px solid cyan;
+    margin: 0 10px;
+}
+
+    #experience h1 span {
+    position: relative;
+    padding: 0 10px;
+}
+
+
+    #experience p{
+    margin-left: 9px;
+    padding-right: 55px;
+    text-align: justify;
+}
+
+    #projects h1{
+    font-size: 15px;
+    margin-left: -12 0px;
+  }
+
+    #projects h1::before{
+    content: '';
+    flex: 0 0 20%;
+    border-top: 1px solid cyan;
+    margin: 0 10px;
+
+}
+
+   #projects h1::after {
+   content: '';
+   flex: 0 0 20%;
+   border-top: 1px solid cyan;
+   margin: 0 10px;
+}
+
+    #projects h1 span {
+    position: relative;
+    padding: 0 10px;
+}
+
+#projects .gallery {
+    margin-left: -100px;
+}
+
+#projects h2{
+    font-size: 13px;
+    text-align: center;
+    margin-left: 145px;
+}
+
+#contact h1{
+    font-size: 15px;
+    margin-left: -12 0px;
+  }
+
+    
+
 }
