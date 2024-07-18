@@ -349,10 +349,11 @@ footer{
 
     #header .logo{
         margin-left: -90px;
-    }
+    }   
 
     #header .socials{
-        margin-left: -20px;
+        margin-left: -1px;
+        margin-right: -80px;
     }
 
     #body{
@@ -403,13 +404,14 @@ footer{
     content: '';
     flex: 0 0 20%;
     border-top: 1px solid cyan;
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
     #about p{
-        margin-left: -110px;
+        margin-left: -60px;
         padding-right: 80px;
         text-align: justify;
+        font-size: 13px;
     }
 
     .listing{
@@ -434,7 +436,7 @@ footer{
     content: '';
     flex: 0 0 10%;
     border-top: 1px solid cyan;
-    margin: 0 10px;
+    margin: 0 30px;
 
 }
 
@@ -442,7 +444,7 @@ footer{
     content: '';
     flex: 0 0 10%;
     border-top: 1px solid cyan;
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
     #experience h1 span {
@@ -452,9 +454,10 @@ footer{
 
 
     #experience p{
-    margin-left: 9px;
+    margin-left: 50px;
     padding-right: 55px;
     text-align: justify;
+    font-size: 13px
 }
 
     #projects h1{
@@ -466,7 +469,7 @@ footer{
     content: '';
     flex: 0 0 20%;
     border-top: 1px solid cyan;
-    margin: 0 10px;
+    margin: 0 30px;
 
 }
 
@@ -474,7 +477,7 @@ footer{
    content: '';
    flex: 0 0 20%;
    border-top: 1px solid cyan;
-   margin: 0 10px;
+   margin: 0 30px;
 }
 
     #projects h1 span {
@@ -483,7 +486,7 @@ footer{
 }
 
 #projects .gallery {
-    margin-left: -100px;
+    margin-left: -50px;
 }
 
 #projects h2{
